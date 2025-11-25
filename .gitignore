@@ -1,0 +1,48 @@
+# Django #
+*.log
+*.pot
+*.pyc
+_pycache_/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Virtual environment #
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# IDE / Editors #
+.idea/
+.vscode/
+.sublime-
+*.swp
+*.swo
+
+# Mac / Windows #
+.DS_Store
+Thumbs.db
+
+# Build / Deployment #
+staticfiles/
+collectstatic/
+*.bak
+*.orig
+
+# Secrets (never commit these!) #
+.env
+.secret_key
+config/.env
+
+# Node / Frontend (if you ever add) #
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Migrations (optional – safe to ignore if you don't use a real DB yet) #
+# /migrations/
+# !*/migrations/_init_.py

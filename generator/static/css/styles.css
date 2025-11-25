@@ -1,0 +1,95 @@
+/* Custom styles for QR Code Generator app */
+
+
+/* Light theme is default */
+body[data-theme="light"] {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+body[data-theme="dark"] {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+[data-theme="dark"] .card {
+    background-color: #1e1e1e !important;
+    color: #f8f9fa;
+}
+
+[data-theme="dark"] .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+[data-theme="dark"] .btn-primary:hover,
+[data-theme="dark"] .btn-primary:focus {
+    background-color: #084298;
+    border-color: #084298;
+}
+
+textarea.form-control-lg, 
+input.form-control-lg, 
+select.form-select-lg {
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+textarea.form-control-lg {
+    resize: vertical;
+}
+
+.card-img-top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.btn-lg {
+    font-weight: 700;
+}
+
+h1.display-5 {
+    font-weight: 700;
+}
+
+/* Ensure large touch targets on buttons for mobile */
+button.btn-lg, button.btn-primary {
+    padding: 0.75rem 1.25rem;
+}
+
+/* Responsive image preview max */
+@media (max-width: 576px) {
+    .card-img-top {
+        max-height: 120px;
+    }
+}
+
+/* Centered content */
+.container {
+    max-width: 480px;
+}
+
+/* Add spacing for nav-tabs */
+.nav-tabs {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.nav-tabs .nav-link {
+    font-weight: 600;
+}
+
+/* History cards override for dark */
+[data-theme="dark"] .card.shadow-sm {
+    background-color: #2c2c2c;
+    border-color: #444;
+}
+
+/* Misc adjustments */
+textarea.form-control-lg::placeholder {
+    opacity: 0.7;
+}
+
+
